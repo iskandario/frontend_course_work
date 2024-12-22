@@ -1,0 +1,172 @@
+.boardContainer{
+  font-family: sans-serif;
+}
+
+
+.addColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.addColumnButton {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.addColumnButton:hover {
+  background-color: #eaeaea;
+}
+
+.addColumnForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.addColumnForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+}
+
+.addColumnInput {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.addColumnActions {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.column {
+  background-color: white;
+  width: 12%;
+  border-radius: 8px;
+  border: 1px;
+  padding: 15px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column:hover{
+  background-color: #fbfaf9;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.deleteColumnButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.deleteColumnButton:hover {
+  color: #e74c3c;
+}
+
+
+.columnHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.radioButton {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radioButton:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.radioButton:hover {
+  border-color: #888;
+}
+
+.taskCompleted {
+  text-decoration: line-through;
+  color: #888;
+}
+.taskTitle{
+  padding-bottom: 1vw;
+}
+.taskCompletedAnimation {
+  animation: taskCompletionFlyOut 0.5s ease forwards;
+}
+
+@keyframes taskCompletionFlyOut {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+}
+
+.saveButton,
+  .cancelButton {
+    padding: 5px 10px;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  
+  .saveButton {
+    background-color: #3286dffb;
+    color: white;
+  }
+  
+  .saveButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancelButton {
+    background-color: #b5b2b2;
+    color: white;
+    margin-right: 15px;
+    padding: 10px 15px;
+  }
+  
+  .cancelButton:hover {
+    background-color: #9b9b9b;
+  }

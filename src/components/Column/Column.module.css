@@ -1,0 +1,63 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .column:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .columnHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .columnTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    word-wrap: break-word;
+  }
+  
+  .columnTitle:hover {
+    color: #007bff;
+  }
+  
+  .inputEditForm {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .inputEditForm:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .deleteColumnButton {
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .deleteColumnButton:hover {
+    color: #e74c3c;
+  }
